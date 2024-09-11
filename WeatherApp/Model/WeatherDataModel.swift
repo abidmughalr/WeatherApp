@@ -9,11 +9,11 @@ import Foundation
 
 struct Weather: Codable {
     let name: String
-    let main: Main
+    let main: TemperatureDetails
     let weather: [WeatherDetail]
 }
 
-struct Main: Codable {
+struct TemperatureDetails: Codable {
     let temp: Double
     let humidity: Int
 }
